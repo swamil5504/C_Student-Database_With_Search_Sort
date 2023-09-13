@@ -1,44 +1,45 @@
 # C_Student-Database_With_Search_Sort
 
-This is a Student Management System implemented in C. It allows you to store and manipulate student records, including their names, roll numbers, and marks. The program provides functionality to accept student details, sort the records using different sorting techniques, and perform a linear search to find a specific student based on their roll number.
+This is a Student Management System implemented in C. It allows you to store and manipulate student records, including their names, roll numbers, and marks. The program provides functionality to accept student details, sort the records using different sorting techniques, and perform a linear search or a binary search to find a specific student based on their roll number.
 
 ## Features
 
-- Accept student details: The program prompts the user to enter the details of multiple students, including their names, roll numbers, and marks. The information is stored in an array of `struct student` objects.
+Input student details: The program allows you to input student details such as name, roll number, and marks. You can enter the information for multiple students at once.
 
-- Sorting techniques: The program offers three sorting techniques: Insertion Sort, Selection Sort, and Shell Sort. You can choose one of these techniques to sort the student records based on their roll numbers. The chosen sorting algorithm is:
+Sorting techniques: The program provides three different sorting techniques to sort the student records:
 
-    - Insertion Sort: This algorithm iterates over the array and places each element in its correct position by comparing it with the previous elements.
+Insertion Sort: This technique sorts the records in ascending order based on the roll number.
+Selection Sort: This technique sorts the records in ascending order based on the roll number.
+Shell Sort: This technique sorts the records in ascending order based on the roll number.
+Searching options: The program offers two searching options to find specific students:
 
-    - Selection Sort: This algorithm finds the minimum element in each iteration and swaps it with the element at the current position.
+Linear Search: You can search for a student by their roll number using linear search. It iterates through the records sequentially until it finds a match.
+Binary Search: You can search for a student by their roll number using binary search. This technique requires the records to be sorted in ascending order beforehand.
+Display sorted records: After performing a sorting operation, the program displays the sorted student records. The sorted records include the student's name, roll number, and marks.
 
-    - Shell Sort: This algorithm is an optimized version of insertion sort that compares elements that are far apart before sorting them.
+Continuous execution: The program runs in a loop, allowing you to perform multiple sorting and searching operations without restarting it. You can choose different techniques or search for different students in each iteration.
 
-- Display sorted student data: After sorting the student records, the program displays the sorted data, including the names, roll numbers, and marks of each student.
-
-- Linear search: The program allows you to search for a specific student based on their roll number using linear search. If the student is found, their details are displayed.
+User-friendly interface: The program provides a simple and intuitive command-line interface. It prompts you for input, displays the results, and guides you through the available options.
 
 ## Usage
 
-1. Enter the number of students: Specify the number of student records you want to manage.
+1. When prompted, enter the number of students for which you want to input records.
 
-2. Enter Student details: Provide the details for each student, including their name, roll number, and marks.
+2. Provide the details for each student, including their name, roll number, and marks.
 
-3. Select a sorting technique: Choose one of the available sorting techniques (1 for Insertion Sort, 2 for Selection Sort, 3 for Shell Sort).
+3. Choose a searching/sorting technique from the available options:
 
-4. Sorted Student Data: The program displays the sorted student data, showing the names, roll numbers, and marks in ascending order of roll numbers.
+- Insertion Sort
+- Selection Sort
+- Shell Sort
+- Linear Search
+- Binary Search
 
-5. Enter the Roll Number to search: Provide a roll number to search for a specific student.
+4. Depending on your choice, the program will either sort the student records or search for a specific student.
 
-6. Student found: If the student is found based on the provided roll number, their details (name, roll number, and marks) are displayed.
+5. The program will display the sorted student records or the search result.
 
-7. Student not found: If the student is not found, a message indicating that the student was not found is displayed.
-
-## File Structure
-
-- main.c: Contains the main program logic and user interface.
-- student.h: Contains the struct definition for student and function declarations.
-- student.c: Contains the function implementations for accepting, displaying, sorting, and searching student records.
+6. You can repeat the sorting/searching process as many times as desired.
 
 ## How to Run
 
