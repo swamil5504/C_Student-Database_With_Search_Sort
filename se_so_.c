@@ -92,7 +92,6 @@ void shellSort(struct student students[], int n) {
 
 int main() {
     int n, choice, key, index;
-
     printf("Enter the number of students: ");
     scanf("%d", &n);
 
@@ -100,43 +99,66 @@ int main() {
 
     accept(students, n);
 
-    printf("Select a sorting Technique\n");
-    printf("1. Insertion Sort\n");
-    printf("2. Selection Sort\n");
-    printf("3. Shell Sort\n");
-    printf("Enter your choice: ");
-    scanf("%d", &choice);
+    while (1) {
+        printf("\nSelect a Searching/Sorting Technique:\n");
+        printf("1. Insertion Sort\n");
+        printf("2. Selection Sort\n");
+        printf("3. Shell Sort\n");
+        printf("4. Linear Search\n");
+        printf("5. Binary Search\n");
+        printf("6. Exit Program\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
 
-    switch (choice) {
-        case 1:
-            insertionSort(students, n);
-            break;
-        case 2:
-            selectionSort(students, n);
-            break;
-        case 3:
-            shellSort(students, n);
-            break;
-        default:
-        printf("Invalid choice.\n");
-            return 1;
-    }
-  
-    printf("\nSorted Student Data:\n");
-    display(students, n);
-
-    printf("Enter the Roll Number to search: ");
-    scanf("%d", &key);
-
-    index = linearSearch(students, n, key);
-
-    if (index != -1) {
-        printf("Student found!\n");
-        printf("Name: %s\n", students[index].name);
-        printf("Roll Number: %d\n", students[index].rollNo);
-        printf("Marks: %.2f\n", students[index].marks);
-    } else {
-        printf("Student not found.\n");
+        switch (choice) {
+            case 1:
+                insertionSort(students, n);
+                printf("\nSorted Student Data:\n");
+                display(students, n);
+                break;
+            case 2:
+                selectionSort(students, n);
+                printf("\nSorted Student Data:\n");
+                display(students, n);
+                break;
+            case 3:
+                shellSort(students, n);
+                printf("\nSorted Student Data:\n");
+                display(students, n);
+                break;
+            case 4:
+                printf("Enter the Roll Number to search: ");
+                scanf("%d", &key);
+                index = linearSearch(students, n, key);
+                if (index != -1) {
+                    printf("Student found!\n");
+                    printf("Name: %s\n", students[index].name);
+                    printf("Roll Number: %d\n", students[index].rollNo);
+                    printf("Marks: %.2f\n", students[index].marks);
+                } else {
+                    printf("Student not found.\n");
+                }
+                break;
+            case 5:
+                printf("Enter the Roll Number to search: ");
+                scanf("%d", &key);
+                index = binarySearch(students, 0, n - 1, key);
+                if (index != -1) {
+                    printf("Student found!\n");
+                    printf("Name: %s\n", students[index].name);
+                    printf("Roll Number: %d\n", students[index].rollNo);
+                    printf("Marks: %.2f\n", students[index].marks);
+                } else {
+                    printf("Student not found.\n");
+                }
+                break;
+            case 6:
+                printf("Exiting program...\n");
+                return 0;
+            default:
+                printf("Invalid choice.\n");
+                break;
+        }
     }
 
     return 0;
