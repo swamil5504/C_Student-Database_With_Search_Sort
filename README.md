@@ -4,22 +4,24 @@ This is a Student Management System implemented in C. It allows you to store and
 
 ## Features
 
-Input student details: The program allows you to input student details such as name, roll number, and marks. You can enter the information for multiple students at once.
+- Input student details: Enter student information such as name, roll number, and marks for multiple students at once.
 
-Sorting techniques: The program provides three different sorting techniques to sort the student records:
-    - Insertion Sort: This technique sorts the records in ascending order based on the roll number.
-    - Selection Sort: This technique sorts the records in ascending order based on the roll number.
-    - Shell Sort: This technique sorts the records in ascending order based on the roll number.
+- Sorting techniques: Five sorting techniques are available:
+  - Insertion Sort
+  - Selection Sort
+  - Shell Sort
+  - Bucket Sort: Sorts the records based on marks using the Bucket Sort algorithm.
+  - Radix Sort: Sorts the records based on marks using the Radix Sort algorithm.
 
-Searching options: The program offers two search options to find specific students:
-    1) Linear Search: You can search for a student by their roll number using linear search. It iterates through the records sequentially until it finds a match.
-    2) Binary Search: You can search for a student by their roll number using binary search. This technique requires the records to be sorted in ascending order beforehand.
-    
-Display sorted records: After a sorting operation, the program displays the sorted student records. The sorted records include the student's name, roll number, and marks.
+- Searching options:
+  - Linear Search: Find a student by their roll number using linear search.
+  - Binary Search: Find a student by their roll number using binary search (requires sorting beforehand).
 
-Continuous execution: The program runs in a loop, allowing you to perform multiple sorting and searching operations without restarting it. You can choose different techniques or search for different students in each iteration.
+- Display sorted records: After sorting, the program displays sorted student records including name, roll number, and marks.
 
-User-friendly interface: The program provides a simple and intuitive command-line interface. It prompts you for input, displays the results, and guides you through the available options.
+- Continuous execution: Perform multiple sorting and searching operations without restarting the program.
+
+- User-friendly interface: Simple and intuitive command-line interface with prompts and easy navigation.
 
 ## Usage
 
@@ -31,14 +33,20 @@ User-friendly interface: The program provides a simple and intuitive command-lin
     - Insertion Sort
     - Selection Sort
     - Shell Sort
-    - Linear Search
-    - Binary Search
+    - Bucket Sort(Present in Another File)
+    - Radix Sort(Present in Another File)
 
 4. Depending on your choice, the program will either sort the student records or search for a specific student.
 
 5. The program will display the sorted student records or the search result.
 
 6. You can repeat the sorting/searching process as many times as desired.
+
+## Additional Code
+
+The code for Bucket Sort and Radix Sort, used for sorting the student records based on marks, is provided in a separate file named `buckradswamil.c`. Refer to that file for the code related to Bucket Sort and Radix Sort.
+
+The remaining searching and sorting algorithms used in the program can be found in the file `se_so_.c`.
 
 ## How to Run
 
