@@ -11,11 +11,11 @@ Sorting techniques: The program provides three different sorting techniques to s
 Insertion Sort: This technique sorts the records in ascending order based on the roll number.
 Selection Sort: This technique sorts the records in ascending order based on the roll number.
 Shell Sort: This technique sorts the records in ascending order based on the roll number.
-Searching options: The program offers two searching options to find specific students:
+Searching options: The program offers two search options to find specific students:
 
 Linear Search: You can search for a student by their roll number using linear search. It iterates through the records sequentially until it finds a match.
-Binary Search: You can search for a student by their roll number using binary search. This technique requires the records to be sorted in ascending order beforehand.
-Display sorted records: After performing a sorting operation, the program displays the sorted student records. The sorted records include the student's name, roll number, and marks.
+Binary Search: You can search for a student by their roll number using binary search. *This technique requires the records to be sorted in ascending order beforehand.*
+Display sorted records: After a sorting operation, the program displays the sorted student records. The sorted records include the student's name, roll number, and marks.
 
 Continuous execution: The program runs in a loop, allowing you to perform multiple sorting and searching operations without restarting it. You can choose different techniques or search for different students in each iteration.
 
