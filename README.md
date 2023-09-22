@@ -5,14 +5,14 @@ This is a Student Management System implemented in C. It allows you to store and
 ## Features
 
 Input student details: The program allows you to input student details such as name, roll number, and marks. You can enter the information for multiple students at once.
---------------------------
+
 Sorting techniques: The program provides three different sorting techniques to sort the student records:
 Insertion Sort: This technique sorts the records in ascending order based on the roll number.
 
 Selection Sort: This technique sorts the records in ascending order based on the roll number.
 
 Shell Sort: This technique sorts the records in ascending order based on the roll number.
---------------------------
+
 Searching options: The program offers two search options to find specific students:
 1)Linear Search: You can search for a student by their roll number using linear search. It iterates through the records sequentially until it finds a match.
 
