@@ -7,22 +7,19 @@ This is a Student Management System implemented in C. It allows you to store and
 Input student details: The program allows you to input student details such as name, roll number, and marks. You can enter the information for multiple students at once.
 
 Sorting techniques: The program provides three different sorting techniques to sort the student records:
-Insertion Sort: This technique sorts the records in ascending order based on the roll number.
-
-Selection Sort: This technique sorts the records in ascending order based on the roll number.
-
-Shell Sort: This technique sorts the records in ascending order based on the roll number.
+    - Insertion Sort: This technique sorts the records in ascending order based on the roll number.
+    - Selection Sort: This technique sorts the records in ascending order based on the roll number.
+    - Shell Sort: This technique sorts the records in ascending order based on the roll number.
 
 Searching options: The program offers two search options to find specific students:
-1)Linear Search: You can search for a student by their roll number using linear search. It iterates through the records sequentially until it finds a match.
+    1) Linear Search: You can search for a student by their roll number using linear search. It iterates through the records sequentially until it finds a match.
+    2) Binary Search: You can search for a student by their roll number using binary search. This technique requires the records to be sorted in ascending order beforehand.
+    
+Display sorted records: After a sorting operation, the program displays the sorted student records. The sorted records include the student's name, roll number, and marks.
 
-2)Binary Search: You can search for a student by their roll number using binary search. *This technique requires the records to be sorted in ascending order beforehand.*
+Continuous execution: The program runs in a loop, allowing you to perform multiple sorting and searching operations without restarting it. You can choose different techniques or search for different students in each iteration.
 
-3)Display sorted records: After a sorting operation, the program displays the sorted student records. The sorted records include the student's name, roll number, and marks.
-
-4)Continuous execution: The program runs in a loop, allowing you to perform multiple sorting and searching operations without restarting it. You can choose different techniques or search for different students in each iteration.
-
-5)User-friendly interface: The program provides a simple and intuitive command-line interface. It prompts you for input, displays the results, and guides you through the available options.
+User-friendly interface: The program provides a simple and intuitive command-line interface. It prompts you for input, displays the results, and guides you through the available options.
 
 ## Usage
 
@@ -31,12 +28,11 @@ Searching options: The program offers two search options to find specific studen
 2. Provide the details for each student, including their name, roll number, and marks.
 
 3. Choose a searching/sorting technique from the available options:
-
-- Insertion Sort
-- Selection Sort
-- Shell Sort
-- Linear Search
-- Binary Search
+    - Insertion Sort
+    - Selection Sort
+    - Shell Sort
+    - Linear Search
+    - Binary Search
 
 4. Depending on your choice, the program will either sort the student records or search for a specific student.
 
